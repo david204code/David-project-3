@@ -6,18 +6,25 @@
 
   <title>Brooklyn Outdoor Film's Schedule</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
+  <style>
+    body {
+      font-family: 'Asul';font-size: 22px;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-      <nav class="navbar navbar-inverse">
-        <div class="container top-section">
-            <a class="nav-brand" href="homepage.html"><h1>Brooklyn Outdoor Film Festival</h1></a>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid top-section">
+            <a class="nav-brand" href="homepage.html"><img src="website-pics/website-logo.png"></a>
             <!-- <h1>Brooklyn Bridge Park! <br>August 5th to 8th</h1> -->
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right menu-bar">
             <li><a href="homepage.html">Home</a></li>
-            <li><a href="homepage.html#form-section">Registration</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#rsvpModal">Registration</a></li>
             <li class="active"><a href="film-schedule.html">Film Schedule</a></li>
               <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Social Media
                 <span class="caret"></span></a>
@@ -35,183 +42,853 @@
       </nav>
   </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>Day One</h1>
-      </div>
+
+  <section class="schedule">
+    <div class="page-header">
+      <h1 style="text-align:center;">The Line-up</h1>
     </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/eMwotYpkcE42lGlaoCpPFaolvst.jpg" alt="">
-        <h2>The A-Team</h2>
-        <ul>
-          <li><strong>Film Length: </strong>120 minutes</li>
-          <li><strong>Trailer </strong>120 minutes</li>
-        </ul>
-      </div>
-      <div class="col-lg-4">
-        <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/eMwotYpkcE42lGlaoCpPFaolvst.jpg" alt="">
-        <h2>The A-Team</h2>
-        <ul>
-          <li><strong>Film Length: </strong>120 minutes</li>
-          <li><strong>Trailer </strong>120 minutes</li>
-        </ul>
-      </div>
-      <div class="col-lg-4">
-        <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/eMwotYpkcE42lGlaoCpPFaolvst.jpg" alt="">
-        <h2>The A-Team</h2>
-        <ul>
-          <li><strong>Film Length: </strong>120 minutes</li>
-          <li><!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#dayOneMovie3">
-  Trailer
-</button></li>
-        </ul>
-        <!-- Modal -->
-        <div class="modal fade" id="dayOneMovie3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">The A-Team</h4>
-              </div>
-              <div class="modal-body">
-                <iframe width="854" height="480" src="https://www.youtube.com/embed/npeFSxis7Ds" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
+
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#day-1" aria-controls="day-1" data-toggle="tab">Day 1</a></li>
+        <li><a href="#day-2" data-toggle="tab">Day 2</a></li>
+        <li><a href="#day-3" data-toggle="tab">Day 3</a></li>
+        <li><a href="#day-4" data-toggle="tab">Day 4</a></li>
+      </ul>
+  
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="day-1">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="#" class="poster">
+                <img class="img-responsive" src="website-pics/a-team.jpg" alt="">
+                <div class="caption">
+                  <table class="table table-bordered table-condensed">
+                      
+                    <tr>
+                      <th>Film</th>
+                      <td>A-Team</td>
+                    </tr>
+    
+                    <tr>
+                      <th>Screening Time</th>
+                      <td>18:05pm</td>
+                    </tr>
+    
+                    <tr>
+                      <th>Film Length</th>
+                      <td>119 Minutes</td>
+                    </tr>
+                      
+                    <tr>
+                      <th>Genre(s)</th>
+                      <td>Actions, Comedy</td>
+                    </tr>                  
+    
+                  </table>
+                </div>
+              </a>
             </div>
+
+            <div class="col-md-4">
+              <a href="#" class="poster">
+                <img class="img-responsive" src="website-pics/taken.jpg" alt="">
+                <div class="caption">
+                  <table class="table table-bordered table-condensed">
+
+                    <tr>
+                      <th>Film</th>
+                      <td>Taken</td>
+                    </tr>
+
+                    <tr>
+                      <th>Screening Time</th>
+                      <td>20:15</td>
+                    </tr>
+
+                    <tr>
+                      <th>Film Length</th>
+                      <td>90 minutes</td>
+                    </tr>
+
+                    <tr>
+                      <th>Genre(s)</th>
+                      <td>Action, Thriller</td>
+                    </tr>
+
+                  </table>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="#" class="poster">
+                <img class="img-responsive" src="website-pics/ironman.jpg" alt="">
+                <div class="caption">
+                  <table class="table table-bordered table-condensed">
+
+                    <tr>
+                      <th>Film</th>
+                      <td>Iron Man</td>
+                    </tr>
+
+                    <tr>
+                      <th>Screening Time</th>
+                      <td>21:50</td>
+                    </tr>
+
+                    <tr>
+                      <th>Film Length</th>
+                      <td>126 minutes</td>
+                    </tr>
+
+                    <tr>
+                      <th>Genre(s)</th>
+                      <td>Superhero</td>
+                    </tr>
+
+                  </table>
+                </div>
+              </a>
+            </div>
+
           </div>
         </div>
+        
+        <div role="tabpanel" class="tab-pane fade in" id="day-2">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="#" class="poster">
+                <img class="img-responsive" src="website-pics/x-men.jpg" alt="">
+                <div class="caption">
+                  <table class="table table-bordered table-condensed">
+
+                    <tr>
+                      <th>Film</th>
+                      <td>X-Men</td>
+                    </tr>
+                  
+                    <tr>
+                      <th>Screening Time</th>
+                      <td>18:05</td>
+                    </tr>
+
+                    <tr>
+                      <th>Film Length</th>
+                      <td>104 minutes</td>
+                    </tr>
+                    
+                    <tr>
+                      <th>Genre(s)</th>
+                      <td>Superhero</td>
+                    </tr>                    
+
+                  </table>
+                </div>
+              </a>           
+            </div>
+
+            <div class="col-md-4">
+              <a href="" class="poster">
+                <img class="img-responsive" src="website-pics/x-men2.jpg" alt="">
+                <div class="caption">
+                  <table class="table table-bordered table-condensed">
+
+                    <tr>
+                      <th>Film</th>
+                      <td>X-Men 2</td>
+                    </tr>
+                  
+                    <tr>
+                      <th>Screening Time</th>
+                      <td>19:56</td>
+                    </tr>
+
+                    <tr>
+                      <th>Film Length</th>
+                      <td>133 minutes</td>
+                    </tr>
+                    
+                    <tr>
+                      <th>Genre(s)</th>
+                      <td>Superhero</td>
+                    </tr>                    
+
+                  </table>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="" class="poster">
+                  <img class="img-responsive" src="website-pics/x-men3.jpg">
+                  <div class="caption">
+                    <table class="table table-bordered table-condensed">
+  
+                      <tr>
+                        <th>Film</th>
+                        <td>X-Men: The Last Stand</td>
+                      </tr>
+                    
+                      <tr>
+                        <th>Screening Time</th>
+                        <td>22:15</td>
+                      </tr>
+  
+                      <tr>
+                        <th>Film Length</th>
+                        <td>104 minutes</td>
+                      </tr>
+                                     
+                      <tr>
+                        <th>Genre(s)</th>
+                        <td>Superhero</td>
+                      </tr>                    
+  
+                    </table>
+                  </div>
+                </a>
+              </div>
+
+          </div>
+        </div>
+
+
+        <div role="tabpanel" class="tab-pane fade in" id="day-3">
+          
+          <div class="row">
+
+            <div class="col-md-4 col-md-offset-2">
+              <a href="#" class="poster">
+                <img class="img-responsive" src="website-pics/inception.jpg">
+                <div class="caption">
+                  <table class="table table-bordered table-condensed">
+
+                    <tr>
+                      <th>Film</th>
+                      <td>Inception</td>
+                    </tr>
+
+                    <tr>
+                      <th>Screening Time</th>
+                      <td>18:15</td>
+                    </tr>
+
+                    <tr>
+                      <th>Film Length</th>
+                      <td>148 minutes</td>
+                    </tr>
+
+                    <tr>
+                      <th>Genre(s)</th>
+                      <td>Science fiction</td>
+                    </tr>
+
+                  </table>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="#" class="poster">
+                <img class="img-responsive" src="website-pics/interstellar.jpg">
+                <div class="caption">
+                  <table class="table table-bordered table condensed">
+    
+                    <tr>
+                      <th>Film</th>
+                      <td>Interstellar</td>
+                    </tr>
+
+                    <tr>
+                      <th>Screening Time</th>
+                      <td>21:05</td>
+                    </tr>
+
+                    <tr>
+                      <th>Film Length</th>
+                      <td>169 minutes</td>
+                    </tr>
+
+                    <tr>
+                      <th>Genre(s)</th>
+                      <td>Science fiction</td>
+                    </tr>
+    
+                  </table>
+    
+                </div>
+                </a>
+              </div>                    
+          
+          </div>                 
+          
+        </div>
+        
+        
+        <div role="tabpanel" class="tab-pane fade in" id="day-4">
+          
+          <div class="row">
+
+            <div class="col-md-4 col-md-offset-2">
+              <a href="#" class="poster">
+                  <img class="img-responsive" src="website-pics/batman begin.jpg" alt="">
+                  <div class="caption">
+                    <table class="table table-bordered table-condensed">
+                      
+                      <tr>
+                        <th>Film</th>
+                        <td>Batman Begins</td>
+                      </tr>
+
+                      <tr>
+                        <th>Screening Time</th>
+                        <td>18:00</td>
+                      </tr>
+
+                      <tr>
+                        <th>Film Length</th>
+                        <td>140 minutes</td>
+                      </tr>
+
+                      <tr>
+                        <th>Genre(s)</th>
+                        <td>Superhero</td>
+                      </tr>
+
+                    </table>
+                </div>
+              </a>
+              
+            </div>
+            
+            <div class="col-md-4">
+              <a href="#" class="poster">
+                <img class="img-responsive" src="website-pics/the-dark-knight.jpg" alt="">
+                <div class="caption">
+                <table class="table table-bordered table-condensed">
+
+                  <tr>
+                    <th>Film</th>
+                    <td>The Dark Knight</td>
+                  </tr>
+
+                  <tr>
+                    <th>Screening Time</th>
+                    <td>20:50</td>
+                  </tr>
+
+                  <tr>
+                    <th>Film Length</th>
+                    <td>152 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <th>Genre(s)</th>
+                    <td>Superhero</td>
+                  </tr>
+
+                </table>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
+      
     </div>
-  </div>
+    
+  </section>
 
-  <div class="container">
-    <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th class="text-center">Day 1</th>
-      </tr>
-      <tr>
-        <th>Films</th>
-        <th>Screening</th>
-        <th>Film length</th>
-        <th>Genre(s)</th>
-      </tr>
-    </thead>
+  <!-- <section>
+    <div class="container">
 
-      <tbody>
+
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/eMwotYpkcE42lGlaoCpPFaolvst.jpg" alt="">
+          </a>
+          <p>
+            <div class="caption">
+              <table class="table table-bordered table-condensed">
+                  
+                <tr>
+                  <th>Film</th>
+                  <td>A-Team</td>
+                </tr>
+
+                <tr>
+                  <th>Screening Time</th>
+                  <td>18:05pm</td>
+                </tr>
+
+                <tr>
+                  <th>Film Length</th>
+                  <td>119 Minutes</td>
+                </tr>
+                  
+                <tr>
+                  <th>Genre(s)</th>
+                  <td>Actions, Comedy</td>
+                </tr>                  
+
+              </table>
+            </div>
+          </p>
+                   
+        </div>
+
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/3zlffXmo7QpVBc17QIJWrRfasVr.jpg" alt="">
+          </a>
+
+          <p>
+            <div>
+              <table class="table table-bordered table-condensed">
+                <tr>
+                  <th>Film</th>
+                  <td>Taken</td>
+                </tr>
+
+                <tr>
+                  <th>Screening Time</th>
+                  <td>20:15</td>
+                </tr>
+
+                <tr>
+                  <th>Film Length</th>
+                  <td>90 minutes</td>
+                </tr>
+
+                <tr>
+                  <th>Genre(s)</th>
+                  <td>Action, Thriller</td>
+                </tr>
+
+              </table>
+            </div>
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/aL82v1VX48OtW8WmiYf8vIwdiL6.jpg" alt="">
+          </a>
+
+          <p>
+            <div>
+              <table class="table table-bordered table-condensed">
+                <tr>
+                  <th>Film</th>
+                  <td>Iron Man</td>
+                </tr>
+
+                <tr>
+                  <th>Screening Time</th>
+                  <td>21:50</td>
+                </tr>
+
+                <tr>
+                  <th>Film Length</th>
+                  <td>126 minutes</td>
+                </tr>
+
+                <tr>
+                  <th>Genre(s)</th>
+                  <td>Superhero</td>
+                </tr>
+
+              </table>
+            </div>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="row">
+        
+        <div class="col-lg-4">
+            <a>
+              <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/k01Q6ATbfzNJgw4Zuoj0LTY3T9x.jpg" alt="">
+            </a>
+
+            <p>
+              <div>
+                <table class="table table-bordered table-condensed">
+                  <tr>
+                    <th>Film</th>
+                    <td>X-Men</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Screening Time</th>
+                    <td>18:05</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Film Length</th>
+                    <td>104 minutes</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Genre(s)</th>
+                    <td>Superhero</td>
+                  </tr>
+  
+                </table>
+              </div>
+            </p>
+        </div>
+
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/82X8kDvdzVyIUtoo3uHNiM67iq1.jpg" alt="">
+          </a>
+          <p>
+            <div>
+              <table class="table table-bordered table-condensed">
+                <tr>
+                  <th>Film</th>
+                  <td>X-Men 2</td>
+                </tr>
+
+                <tr>
+                  <th>Screening Time</th>
+                  <td>19:56</td>
+                </tr>
+
+                <tr>
+                  <th>Film Length</th>
+                  <td>133 minutes</td>
+                </tr>
+
+                <tr>
+                  <th>Genre(s)</th>
+                  <td>Superhero</td>
+                </tr>
+
+              </table>
+            </div>
+            </p>
+        </div>
+
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/7RSSkRpwvkNN5iKO8zACtBA0KhQ.jpg" alt="">
+          </a>
+          <p>
+            <div>
+              <table class="table table-bordered table-condensed">
+                <tr>
+                  <th>Film</th>
+                  <td>X-Men The Last Stand</td>
+                </tr>
+
+                <tr>
+                  <th>Screening Time</th>
+                  <td>19:56</td>
+                </tr>
+
+                <tr>
+                  <th>Film Length</th>
+                  <td>133 minutes</td>
+                </tr>
+
+                <tr>
+                  <th>Genre(s)</th>
+                  <td>Superhero</td>
+                </tr>
+
+              </table>
+            </div>
+          </p>
+          
+        </div>
+        
+      </div>
+
+      <div class="row">
+        
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/vZ9B2dp2MQrFCcIOwsioYHQUa1a.jpg" alt="">
+          </a>
+
+          <p>
+            <div>
+              <table class="table table-bordered table-condensed">
+                <tr>
+                  <th>Film</th>
+                  <td>Inception</td>
+                </tr>
+
+                <tr>
+                  <th>Screening Time</th>
+                  <td>18:15</td>
+                </tr>
+
+                <tr>
+                  <th>Film Length</th>
+                  <td>148 minutes</td>
+                </tr>
+
+                <tr>
+                  <th>Genre(s)</th>
+                  <td>Science fiction</td>
+                </tr>
+
+              </table>
+            </div>
+          </p>
+
+        </div>
+
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/m0UDkSPoVkmNfXFR9FN13yewy4B.jpg" alt="">
+          </a>
+        
+            <p>
+              <div>
+                <table class="table table-bordered table-condensed">
+                  <tr>
+                    <th>Film</th>
+                    <td>Interstellar</td>
+                  </tr>
+
+                  <tr>
+                    <th>Screening Time</th>
+                    <td>21:05</td>
+                  </tr>
+
+                  <tr>
+                    <th>Film Length</th>
+                    <td>169 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <th>Genre(s)</th>
+                    <td>Science fiction, Adventure</td>
+                  </tr>
+
+                </table>
+              </div>
+          </p>
+        </div>
+
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/dr6x4GyyegBWtinPBzipY02J2lV.jpg" alt="">
+          </a>
+          <p>
+            <div>
+              <table class="table table-bordered table-condensed">
+                <tr>
+                  <th>Film</th>
+                  <td>Batman Begins</td>
+                </tr>
+
+                <tr>
+                  <th>Screening Time</th>
+                  <td>18:00</td>
+                </tr>
+
+                <tr>
+                  <th>Film Length</th>
+                  <td>140 minutes</td>
+                </tr>
+
+                <tr>
+                  <th>Genre(s)</th>
+                  <td>Superhero</td>
+                </tr>
+
+              </table>
+            </div>
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <a>
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg" alt="">
+          </a>
+
+          <p>
+            <div>
+              <table class="table table-bordered table-condensed">
+                <tr>
+                  <th>Film</th>
+                  <td>The Dark Knight</td>
+                </tr>
+
+                <tr>
+                  <th>Screening Time</th>
+                  <td>20:50</td>
+                </tr>
+
+                <tr>
+                  <th>Film Length</th>
+                  <td>152 minutes</td>
+                </tr>
+
+                <tr>
+                  <th>Genre(s)</th>
+                  <td>Superhero</td>
+                </tr>
+
+              </table>
+            </div>
+          </p>
+        </div>
+
+      </div>      
+
+    </div>
+  </section> -->
+
+ 
+  <!-- <section>
+    <div class="container">
+      <table class="table table-bordered table-condensed">
+      <thead>
         <tr>
-          <td>A-Team</td>
-          <td>18:05</td>
-          <td>119 minutes</td>
-          <td>Actions, Comedy</td>
+          <th class="text-center">Day 1</th>
         </tr>
-
         <tr>
-          <td>Taken</td>
-          <td>20:15</td>
-          <td>90 minutes</td>
-          <td>Action, Thriller</td>
+          <th>Films</th>
+          <th>Screening</th>
+          <th>Film length</th>
+          <th>Genre(s)</th>
         </tr>
+      </thead>
 
-        <tr>
-          <td>Iron Man</td>
-          <td>21:50</td>
-          <td>126</td>
-          <td>Superhero</td>
-        </tr>
-
-
-        <thead>
+        <tbody>
           <tr>
-            <th class="text-center">Day 2</th>
-          </tr>
-          <tr>
-            <th>Films</th>
-            <th>Screening</th>
-            <th>Film length</th>
-            <th>Genre(s)</th>
-          </tr>
-        </thead>
-
-        <tr>
-          <td>X-Men</td>
-          <td>18:05</td>
-          <td>104 minutues</td>
-          <td>Superhero</td>
-        </tr>
-
-        <tr>
-          <td>X-Men 2</td>
-          <td>19:56</td>
-          <td>133 minutes</td>
-          <td>Superhero</td>
-        </tr>
-
-        <tr>
-          <td>X-Men: The Last Stand</td>
-          <td>22:15</td>
-          <td>104 minutes</td>
-          <td>Superhero</td>
-        </tr>
-
-        <thead>
-          <tr>
-            <th class="text-center">Day 3</th>
+            <td>A-Team</td>
+            <td>18:05</td>
+            <td>119 minutes</td>
+            <td>Actions, Comedy</td>
           </tr>
 
           <tr>
-            <th>Films</th>
-            <th>Screening</th>
-            <th>Film length</th>
-            <th>Genre(s)</th>
-          </tr>
-        </thead>
-          <tr>
-            <td>Inception</td>
-            <td>18:15</td>
-            <td>148 minutes</td>
-            <td>Science fiction</td>
+            <td>Taken</td>
+            <td>20:15</td>
+            <td>90 minutes</td>
+            <td>Action, Thriller</td>
           </tr>
 
           <tr>
-            <td>Interstella</td>
-            <td>21:05</td>
-            <td>169 minutes</td>
-            <td>Science fiction, Adventure</td>
+            <td>Iron Man</td>
+            <td>21:50</td>
+            <td>126</td>
+            <td>Superhero</td>
           </tr>
 
-        <thead>
-          <tr>
-            <th class="text-center">Day 4</th>
-          </tr>
+
+          <thead>
+            <tr>
+              <th class="text-center">Day 2</th>
+            </tr>
+            <tr>
+              <th>Films</th>
+              <th>Screening</th>
+              <th>Film length</th>
+              <th>Genre(s)</th>
+            </tr>
+          </thead>
 
           <tr>
-            <th>Film</th>
-            <th>Screening</th>
-            <th>Film length</th>
-            <th>Genre(s)</th>
-          </tr>
-        </thead>
-
-          <tr>
-            <td>Batman Begins</td>
-            <td>18:00</td>
-            <td>140 minutes</td>
+            <td>X-Men</td>
+            <td>18:05</td>
+            <td>104 minutues</td>
             <td>Superhero</td>
           </tr>
 
           <tr>
-            <td>The Dark Knight</td>
-            <td>20:50</td>
-            <td>152 minutes</td>
+            <td>X-Men 2</td>
+            <td>19:56</td>
+            <td>133 minutes</td>
             <td>Superhero</td>
           </tr>
 
-      </tbody>
-    </table>
-  </div>
+          <tr>
+            <td>X-Men: The Last Stand</td>
+            <td>22:15</td>
+            <td>104 minutes</td>
+            <td>Superhero</td>
+          </tr>
+
+          <thead>
+            <tr>
+              <th class="text-center">Day 3</th>
+            </tr>
+
+            <tr>
+              <th>Films</th>
+              <th>Screening</th>
+              <th>Film length</th>
+              <th>Genre(s)</th>
+            </tr>
+          </thead>
+            <tr>
+              <td>Inception</td>
+              <td>18:15</td>
+              <td>148 minutes</td>
+              <td>Science fiction</td>
+            </tr>
+
+            <tr>
+              <td>Interstellar</td>
+              <td>21:05</td>
+              <td>169 minutes</td>
+              <td>Science fiction, Adventure</td>
+            </tr>
+
+          <thead>
+            <tr>
+              <th class="text-center">Day 4</th>
+            </tr>
+
+            <tr>
+              <th>Film</th>
+              <th>Screening</th>
+              <th>Film length</th>
+              <th>Genre(s)</th>
+            </tr>
+          </thead>
+
+            <tr>
+              <td>Batman Begins</td>
+              <td>18:00</td>
+              <td>140 minutes</td>
+              <td>Superhero</td>
+            </tr>
+
+            <tr>
+              <td>The Dark Knight</td>
+              <td>20:50</td>
+              <td>152 minutes</td>
+              <td>Superhero</td>
+            </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section> -->
 
   <footer>
 
@@ -221,22 +898,79 @@
           <p><a href="">Brooklyn Bridge Park</a> |
           <a href="">Brooklyn, New York City</a></p>
   
-          <p>Follow us on:</p>
-          <p>
-            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          </p>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:info@brooklyn.com"><i class="fas fa-envelope"></i></a>
+          </div>
   
           <h5>Brooklyn Outdoor Film Festival</h5>
           <a href="homepage.html">Homepage</a> |
-          <a href="homepage.html#form-section">Registration</a> |
+          <a href="#" data-toggle="modal" data-target="#rsvpModal">Registration</a> |
           <a href="film-schedule.html">Films Schedule</a> |
           <a href="contact-us.html">Contact Us</a> |
   
         </div>      
       </section>
     </footer>
+
+<!-- RSVP Modal -->
+<div class="modal fade" id="rsvpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Register Now!</h4>
+      </div>
+      <div class="modal-body">
+          <form class="form1-for">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>First name</label>
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>                
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Last name</label>
+                  <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+
+            <div class="form-group">
+              <label>Number of tickets</label>
+              <input type="number" class="form-control" placeholder="Number of tickets">
+            </div>
+
+            <div class="form-group">
+              <p>Will all participate be over the age of 16 when the festival takes place?</p>
+              <label>Yes</label>
+              <input type="radio" name="participate">
+              <label>No</label>
+              <input type="radio" name="participate">
+            </div>
+
+
+            <!-- <button type="submit" class="btn btn-success">Submit</button> -->
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Book</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>    

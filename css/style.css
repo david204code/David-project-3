@@ -28,8 +28,9 @@ background-color: black;
 
 .nav-brand img {
   float: left;
-  opacity: 0.6;
-  width: 12%;
+  /* opacity: 1; */
+  width: auto;
+  height: 75px;
 }
 
 .menu-bar {
@@ -205,5 +206,9 @@ i {
   .list-inline>li {
     font-size: 16px;
     color: #fff;
+  }
+
+  .nav-brand img {
+    height: 60px;
   }
 }
